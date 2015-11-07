@@ -1,2 +1,1 @@
-Duc gay 3d
-thai
+Duy Gay
