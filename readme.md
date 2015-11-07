@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-qiwudqwifhui
-=======
-## xxx
-
-> abc, I love you NPA Gay
-
-that it, `NPA` is gay!
->>>>>>> master
+q2309rq2i0
