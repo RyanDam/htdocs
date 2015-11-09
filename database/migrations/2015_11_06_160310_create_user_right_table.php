@@ -14,7 +14,7 @@ class CreateUserRightTable extends Migration
     {
         Schema::create('user_right', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code');
+            $table->string('name');
             $table->string('info');
             $table->timestamps();
         });
