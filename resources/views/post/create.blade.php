@@ -2,7 +2,14 @@
 <form>
 	<label for="title">Tiêu đề</label> <br>
 	<input name="title" type="text"> <br>
+
+	<label for="content">Loại bài</label> <br>
+	<input type="radio" name="sex" value="khaosat">Khảo sát<br>
+	<input type="radio" name="sex" value="tintuc">Tin Trồng trọt<br>
+	<input type="radio" name="sex" value="kythuat">Kỹ thuật sản xuất<br>
+	<input type="radio" name="sex" value="mohinh">Mô hình sản xuất<br>
+
 	<label for="content">Nội dung</label> <br>
-	<input name="title" type="textarea" rows="6" cols="4"> <br>
+	​<textarea name="content" rows="10" cols="70"></textarea><br>
 	<input type="submit" value="Submit">
 </form>
