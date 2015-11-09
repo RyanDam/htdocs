@@ -1,1 +1,7 @@
-<h1>Home Page</h1>
+@extends('layout.layout')
+
+@section('title','Home'.$appname)
+
+@section('content')
+
+@endsection
