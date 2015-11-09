@@ -1,0 +1,35 @@
+.white {
+	color: #ffffff;
+}
+
+.darkgray {
+	color: #505050;
+}
+
+.green {
+	color: #30ca68;
+}
+
+.blue {
+	color: #3080CA;
+}
+
+.greenback {
+	background-color: #30ca68;
+}
+
+.lightgrayback {
+	background-color: #fafafa;
+}
+
+.whiteback {
+	background-color: #ffffff;
+}
+
+.fontgothambold {
+	font-family: gotham_bold;
+}
+
+.fontcontent {
+	font-family: opensans;
+}
