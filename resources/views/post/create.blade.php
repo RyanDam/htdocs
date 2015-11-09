@@ -15,10 +15,10 @@
 	<input name="title" type="text"> <br>
 
 	<label for="content">Loại bài</label> <br>
-	<input type="radio" name="type" value="khaosat">Khảo sát<br>
-	<input type="radio" name="type" value="tintuc">Tin Trồng trọt<br>
-	<input type="radio" name="type" value="kythuat">Kỹ thuật sản xuất<br>
-	<input type="radio" name="type" value="mohinh">Mô hình sản xuất<br>
+	<input type="radio" name="type" value="Khảo sát">Khảo sát<br>
+	<input type="radio" name="type" value="Tin tức">Tin Trồng trọt<br>
+	<input type="radio" name="type" value="Kỹ thuật">Kỹ thuật sản xuất<br>
+	<input type="radio" name="type" value="Mô hình sản xuất">Mô hình sản xuất<br>
 
 	<label for="content">Nội dung</label> <br>
 	​<textarea name="content" rows="10" cols="70"></textarea><br>
