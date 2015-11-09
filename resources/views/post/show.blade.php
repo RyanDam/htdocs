@@ -1,3 +1,4 @@
+<a href="{{ route('post.index') }}">Quay lại</a>
 <h1>{{ $post->title }}</h1>
 <label>Mục:</label> <span>{{ $post->type }}</span>
 <p>

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class StorePostRequest extends Request
+class StoreBottleTreeRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,10 @@ class StorePostRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required',
-            'type' => 'required',
-            'content' => 'required'
+            'code' => 'required',
+            'nameNormal' => 'required',
+            'nameScience' => 'required',
+            'info' => 'required'
         ];
     }
     /**
@@ -37,9 +38,10 @@ class StorePostRequest extends Request
     public function messages()
     {
         return [
-            'title.required' => 'Tiêu đề chưa được nhập',
-            'type.required' => 'Loại bài chưa được nhập',
-            'content.required'  => 'Nội dung cần được nhập',
+            'code.required' => 'Mã cần được nhậpp',
+            'nameNormal.required' => 'Tên thông thường cần được nhập',
+            'nameScience.required' => 'Tên khoa học cần được nhập',
+            'info.required'  => 'Thông tin cần được nhập'
         ];
     }
 }

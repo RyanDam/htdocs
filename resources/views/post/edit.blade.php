@@ -16,10 +16,10 @@
 	<input name="title" type="text" value="{{ $post->title }}"> <br>
 
 	<label for="content">Loại bài</label> <br>
-	<input type="radio" name="type" value="khaosat">Khảo sát<br>
-	<input type="radio" name="type" value="tintuc">Tin Trồng trọt<br>
-	<input type="radio" name="type" value="kythuat">Kỹ thuật sản xuất<br>
-	<input type="radio" name="type" value="mohinh">Mô hình sản xuất<br>
+	<input type="radio" name="type" value="Khảo sát" {{ $post->type=="Khảo sát"?"checked":null }}>Khảo sát<br>
+	<input type="radio" name="type" value="Tin tức" {{ $post->type=="Tin tức"?"checked":null }}>Tin Trồng trọt<br>
+	<input type="radio" name="type" value="Kỹ thuật" {{ $post->type=="Kỹ thuật"?"checked":null }}>Kỹ thuật sản xuất<br>
+	<input type="radio" name="type" value="Mô hình sản xuất" {{ $post->type=="Mô hình sản xuất"?"checked":null }}>Mô hình sản xuất<br>
 
 	<label for="content">Nội dung</label> <br>
 	​<textarea name="content" rows="10" cols="70">{{ $post->content }}</textarea><br>
