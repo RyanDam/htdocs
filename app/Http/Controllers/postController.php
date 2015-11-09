@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Http\Requests\StorePostRequest;
 use App\Http\Controllers\Controller;
+use App\Post;
 
 class postController extends Controller
 {
@@ -16,7 +17,8 @@ class postController extends Controller
      */
     public function index()
     {
-        //
+        $post = Post::all();
+        return view('post.index', compact('post'));
     }
 
     /**
@@ -35,9 +37,14 @@ class postController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        //
+        $post = Post::create([
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+            'type' => $request->input('type')
+        ]);
+        return redirect()->route('post.show', ['id' => $post->id]);
     }
 
     /**
@@ -48,7 +55,8 @@ class postController extends Controller
      */
     public function show($id)
     {
-        return view('post.show');
+        $post = Post::find($id);
+        return view('post.show', compact('post'));
     }
 
     /**
@@ -59,7 +67,8 @@ class postController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        return view('post.edit', compact('post'));
     }
 
     /**
@@ -69,9 +78,14 @@ class postController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(StorePostRequest $request, $id)
     {
-        //
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->type = $request->input('type');
+        $post->content = $request->input('content');
+        $post->save();
+        return redirect()->route('post.show', ['id' => $post->id]);
     }
 
     /**
@@ -82,6 +96,8 @@ class postController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->delete();
+        return redirect()->route('post.index');
     }
 }

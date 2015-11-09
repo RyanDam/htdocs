@@ -27,6 +27,6 @@ class CreateConsultationTable extends Migration
      */
     public function down()
     {
-        //
+       Schema::drop('consultation');
     }
 }

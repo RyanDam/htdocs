@@ -29,6 +29,6 @@ class CreateBottleTreeTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('bottle_tree');
     }
 }

@@ -27,6 +27,6 @@ class CreateUserRightTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('user_right');    
     }
 }
