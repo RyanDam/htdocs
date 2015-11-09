@@ -14,7 +14,7 @@ class CreateBottleTreeTable extends Migration
     {
         Schema::create('bottle_tree', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code');
+            $table->string('code')->unique();
             $table->string('nameNormal');
             $table->string('nameScience');
             $table->string('info');
