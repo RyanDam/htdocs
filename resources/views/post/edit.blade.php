@@ -1,5 +1,6 @@
-<h1>Đăng bài</h1>
-@if (count($errors) > 0)
+<h1>Chỉnh sửa</h1>
+<form action="{{ route('post.update', $post->id) }}" method="POST">
+	@if (count($errors) > 0)
 	<div class="alert alert-danger">
 		<strong>Whoops!</strong> Xuất hiện lỗi khi tạo bài:<br>
 		<ul>
@@ -8,11 +9,11 @@
 			@endforeach
 		</ul>
 	</div>
-@endif
-<form action="{{ route('post.store') }}" method="POST">
+	@endif
+	{{ method_field('PUT') }}
 	{{ csrf_field() }}
 	<label for="title">Tiêu đề</label> <br>
-	<input name="title" type="text"> <br>
+	<input name="title" type="text" value="{{ $post->title }}"> <br>
 
 	<label for="content">Loại bài</label> <br>
 	<input type="radio" name="type" value="khaosat">Khảo sát<br>
@@ -21,6 +22,6 @@
 	<input type="radio" name="type" value="mohinh">Mô hình sản xuất<br>
 
 	<label for="content">Nội dung</label> <br>
-	​<textarea name="content" rows="10" cols="70"></textarea><br>
+	​<textarea name="content" rows="10" cols="70">{{ $post->content }}</textarea><br>
 	<input type="submit" value="Submit">
 </form>
