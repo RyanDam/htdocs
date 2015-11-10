@@ -1,0 +1,75 @@
+div.postholder {
+	width: 100%;
+	height: 500px;
+	margin: 0px auto;
+	/*margin-bottom: 10px;*/
+	/*margin-top: 10px;*/
+}
+
+div.leftpos {
+	float: left;
+}
+
+div.rightpos {
+	float: right;
+}
+
+div.padrightcontent {
+	left: 20px;
+}
+
+div.padleftcontent {
+	right: 20px;
+}
+
+div.righttitle {
+	right: 0;
+}
+
+div.lefttitle {
+	left: 0;
+}
+
+div.leftsidepost {
+	width: 70%;
+	position: relative;
+	display: block;
+}
+
+div.contentholder {
+	width: 26%;
+	position: relative;
+	display: block;
+}
+
+div.titleholder {
+	position: absolute;
+	display: block;
+	background-color: #ffffff;
+	margin: 20px;
+}
+
+img.postthumbnail {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+}
+
+div.postthumbnailmask {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	background-color: rgba(48, 202, 104, 0.3);
+	/*background-color: #30ca68;*/
+}
+
+h1.posttitle {
+	font-size: 22px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+p.postcontent {
+	line-height: 24px;
+	text-align: justify;
+}
