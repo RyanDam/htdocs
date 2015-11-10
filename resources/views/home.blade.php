@@ -12,7 +12,7 @@
 			<center><h1 class="welcometext fontgothambold">CHUYÊN TRANG KHUYẾN NÔNG</h1></center>
 			<form action="abc" method="POST" class="searchholder">
 				<div class="searchinput_holder">
-					<input type="text" name="searchinput" value="Nhập để tìm kiếm" class="seachinputstyle"></input>
+					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="seachinputstyle"></input>
 				</div>
 				<div class="submitsearch_holder">
 					<input type="submit" value="TÌM KIẾM" class="submitsearch"></form>
