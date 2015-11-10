@@ -10,7 +10,7 @@
 		</div>
 		<div class="homesearchholder">
 			<center><h1 class="welcometext fontgothambold">CHUYÊN TRANG KHUYẾN NÔNG</h1></center>
-			<form action="abc" method="POST" class="searchholder">
+			<form action="{{ route('search') }}" method="GET" class="searchholder">
 				<div class="searchinput_holder">
 					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="seachinputstyle"></input>
 				</div>

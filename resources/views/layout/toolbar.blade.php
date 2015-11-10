@@ -40,7 +40,7 @@
 		</div>
 		
 		<div class="toolbarsearchholder rightpos">
-			<form action="abc" method="POST">
+			<form action="{{ route('search') }}" method="GET">
 				<div class="toolsearchholder">
 					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray"></input>
 				</div>
