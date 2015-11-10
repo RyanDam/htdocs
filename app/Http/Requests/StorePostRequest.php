@@ -26,7 +26,8 @@ class StorePostRequest extends Request
         return [
             'title' => 'required',
             'type' => 'required',
-            'content' => 'required'
+            'content' => 'required',
+            'img' => 'required'
         ];
     }
     /**
@@ -40,6 +41,7 @@ class StorePostRequest extends Request
             'title.required' => 'Tiêu đề chưa được nhập',
             'type.required' => 'Loại bài chưa được nhập',
             'content.required'  => 'Nội dung cần được nhập',
+            'img.required' => 'Link hình ảnh cần được nhập'
         ];
     }
 }
