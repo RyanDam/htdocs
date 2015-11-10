@@ -1,6 +1,6 @@
 @font-face {
 	font-family: gotham_bold;
-	src:url("font/gotham_bold.ttf") format("truetype");
+	src:url("font/vnf-gotham-book.ttf") format("truetype");
 }
 
 @font-face {
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-	font-family: "pacifico";
+	font-family: pacifico;
 	src:url("font/pacifico.ttf") format("truetype");
 }
 
@@ -26,6 +26,11 @@
 @font-face {
 	font-family: opensans;
 	src:url("font/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: opensans_light;
+	src:url("font/OpenSans-Light.ttf") format("truetype");
 }
 
 html {

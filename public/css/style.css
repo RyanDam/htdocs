@@ -37,3 +37,15 @@
 .fontcontent {
 	font-family: opensans;
 }
+
+.fontwelcome {
+	font-family: opensans_light;
+}
+
+.fontroboto {
+	font-family: roboto;
+}
+
+a.menu {
+	text-decoration: none;
+}

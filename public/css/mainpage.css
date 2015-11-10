@@ -9,7 +9,7 @@ div.welcomescreen {
 	position: absolute;
 	width: 100%;
 	height: 90vh;
-	background-color: rgba(51, 51, 102, 0.5);
+	background-color: rgba(51, 51, 102, 0.3);
 }
 
 div.homesearchholder {
@@ -46,8 +46,14 @@ div.searchinput_holder {
 	border-style: solid;
 	border-color: #ffffff;
 	border-width: 2px;
-	background-color: rgba(255,255,255,0.8);
+
+	background-color: rgba(255,255,255,1.0);
+	/*color: #707070;*/
+	/*30ca68*/
+	/*background-color: rgba(48,202,104,1.0);*/
 	color: #707070;
+	/*color: #ffffff;*/
+
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 16px;
@@ -73,7 +79,7 @@ div.submitsearch_holder {
 	font-size: 16px;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-family: gotham_bold;
+	/*font-family: gotham_bold;*/
 }
 
 .submitsearch:hover {
