@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/postreview.css">
 	<link rel="stylesheet" type="text/css" href="css/mainpage.css">
 	<link rel="stylesheet" type="text/css" href="css/postitem.css">
+	<link rel="stylesheet" type="text/css" href="css/toolbarsearch.css">
 </head>
 <body>
 	<!-- <div class="wholescreen"> -->

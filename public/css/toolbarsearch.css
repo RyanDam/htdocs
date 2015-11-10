@@ -1,0 +1,60 @@
+div.toolbarsearchholder {
+	position: relative;
+	height: 60px;
+	width: 300px;
+	/*background-color: #f0f0f0;*/
+	display: table;
+}
+
+div.toolbarsearchholder form {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.toolsearchholder {
+	position: relative;
+	float: left;
+	width: 180px;
+}
+
+.toolsearch {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 24px;
+	border-radius: 45px;
+	border-style: solid;
+	border-color: rgba(48,202,104,1.0);
+	border-width: 2px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 12px;
+	left: -40px;
+}
+
+div.toolsearchsubmitholder {
+	position: relative;
+	float: right;
+	right: 20px;
+	width: 80px;
+}
+
+.toolsearchsubmit {
+	position: relative;
+	float: right;
+	width: 100%;
+	height: 28px;
+	border-radius: 45px;
+	/*border-width: 2px;*/
+	border-style: solid;
+	border-color: rgba(48,202,104,1.0);
+
+	background-color: rgba(48,202,104,1.0);
+}
+
+.toolsearchsubmit:hover {
+	background-color: rgba(68,222,124,1.0);
+	border-color: rgba(68,222,124,1.0);
+}
+

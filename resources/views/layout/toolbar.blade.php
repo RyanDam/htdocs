@@ -33,11 +33,23 @@
 	</div>
 
 	<div class="right">
-		<div class="logintext">
+		<div class="logintext rightpos">
 			<p class="title">
 				Login
 			</p>
-		</div>	
+		</div>
+		
+		<div class="toolbarsearchholder rightpos">
+			<form action="abc" method="POST">
+				<div class="toolsearchholder">
+					<input type="text" name="searchinput" value="Nhập để tìm kiếm" class="toolsearch darkgray"></input>
+				</div>
+				<div class="toolsearchsubmitholder">
+					<input type="submit" value="TÌM" class="toolsearchsubmit white"></form>
+				</div>
+			</form>
+		</div>
+
 	</div>
 
 </div>
