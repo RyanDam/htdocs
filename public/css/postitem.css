@@ -1,0 +1,13 @@
+
+div.postlisthoder {
+	width: 100%;
+	background-color: #d0d0d0;
+}
+
+div.postitemholder {
+	position: relative;
+	width: 80%;
+	height: 200px;
+	margin: 20px auto;
+	background-color: #ababab;
+}

@@ -2,7 +2,7 @@
 	<div class="left">
 		<div class="logo">
 			<p class="title white">
-				Khuyến Nông
+				<a href="{{ route('home') }}" class="menu white">Khuyến Nông</a>
 			</p>
 		</div>
 	</div>
@@ -11,12 +11,12 @@
 		<ul class="menu">
 			<li>
 				<p class="title darkgray">
-					Tin tức
+					<a href="{{ route('bt.index') }}" class="menu darkgray">Giống cây</a>
 				</p>
 			</li>
 			<li>
 				<p class="title darkgray">
-					Giống cây
+					<a href="{{ route('post.index') }}" class="menu darkgray">Bài viết</a>
 				</p>
 			</li>
 			<li>
@@ -26,7 +26,7 @@
 			</li>
 			<li>
 				<p class="title darkgray">
-					Tìm kiếm
+					Thống kê
 				</p>
 			</li>
 		</ul>
@@ -34,7 +34,7 @@
 
 	<div class="right">
 		<div class="logintext">
-			<p class="title green">
+			<p class="title">
 				Login
 			</p>
 		</div>	

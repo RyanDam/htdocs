@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/postreview.css">
 	<link rel="stylesheet" type="text/css" href="css/mainpage.css">
+	<link rel="stylesheet" type="text/css" href="css/postitem.css">
 </head>
 <body>
 	<!-- <div class="wholescreen"> -->
