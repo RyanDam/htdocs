@@ -27,7 +27,8 @@ class StoreBottleTreeRequest extends Request
             'code' => 'required',
             'nameNormal' => 'required',
             'nameScience' => 'required',
-            'info' => 'required'
+            'info' => 'required',
+            'img' => 'required'
         ];
     }
     /**
@@ -41,7 +42,8 @@ class StoreBottleTreeRequest extends Request
             'code.required' => 'Mã cần được nhậpp',
             'nameNormal.required' => 'Tên thông thường cần được nhập',
             'nameScience.required' => 'Tên khoa học cần được nhập',
-            'info.required'  => 'Thông tin cần được nhập'
+            'info.required'  => 'Thông tin cần được nhập',
+            'img.required' => 'Link hình ảnh cần được nhập'
         ];
     }
 }

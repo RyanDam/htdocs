@@ -21,6 +21,9 @@
 	<label for="nameScience">Tên khoa học</label> <br>
 	<input name="nameScience" type="text" value="{{ $bt->nameScience }}"> <br>
 
+	<label for="img">Link hình ảnh</label> <br>
+	<input name="img" type="text" value="{{ $bt->img }}"> <br>
+
 	<label for="info">Thông tin</label> <br>
 	​<textarea name="info" rows="10" cols="70">{{ $bt->info }}</textarea><br>
 	<input type="submit" value="Submit">
