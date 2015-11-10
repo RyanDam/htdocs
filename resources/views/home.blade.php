@@ -57,7 +57,7 @@
 						vị bổ của nó, thật không thể tin được. Như các bạn thấy đấy,
 						nó được trồng thành luống rất đẹp. Rau dền trước khi thu hoạch có màu xanh,
 						sau khi thu hoạch sẽ có màu rau dền rất đẹp.'
-						, "thumbnail" => "1.jpg", "isleft" => true ])
+						, "thumbnail" => "5.jpg", "isleft" => true ])
 		</div>
 	</div>
 

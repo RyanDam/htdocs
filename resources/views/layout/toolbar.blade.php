@@ -2,7 +2,7 @@
 	<div class="left">
 		<div class="logo">
 			<p class="title white">
-				Khuyến Nông
+				<a href="{{ route('home') }}" class="menu white">Khuyến Nông</a>
 			</p>
 		</div>
 	</div>
@@ -11,12 +11,12 @@
 		<ul class="menu">
 			<li>
 				<p class="title darkgray">
-					Tin tức
+					<a href="{{ route('bt.index') }}" class="menu darkgray">Giống cây</a>
 				</p>
 			</li>
 			<li>
 				<p class="title darkgray">
-					Giống cây
+					<a href="{{ route('post.index') }}" class="menu darkgray">Bài viết</a>
 				</p>
 			</li>
 			<li>
@@ -26,18 +26,30 @@
 			</li>
 			<li>
 				<p class="title darkgray">
-					Tìm kiếm
+					Thống kê
 				</p>
 			</li>
 		</ul>
 	</div>
 
 	<div class="right">
-		<div class="logintext">
-			<p class="title green">
+		<div class="logintext rightpos">
+			<p class="title">
 				Login
 			</p>
-		</div>	
+		</div>
+		
+		<div class="toolbarsearchholder rightpos">
+			<form action="abc" method="POST">
+				<div class="toolsearchholder">
+					<input type="text" name="searchinput" value="Nhập để tìm kiếm" class="toolsearch darkgray"></input>
+				</div>
+				<div class="toolsearchsubmitholder">
+					<input type="submit" value="TÌM" class="toolsearchsubmit white"></form>
+				</div>
+			</form>
+		</div>
+
 	</div>
 
 </div>
