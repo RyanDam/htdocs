@@ -14,6 +14,16 @@ div.postitemholder {
 	box-shadow:0px 1px 5px rgba(0,0,0,0.1);
 }
 
+div.headitemholder {
+	position: relative;
+	width: 80%;
+	height: 200px;
+	margin: 20px auto;
+	margin-top: 0;
+	background-color: rgba(0,0,0,0.0);
+	box-shadow:0px 1px 5px rgba(0,0,0,0.0);
+}
+
 div.thumbnailitemholder {
 	position: relative;
 	width: 30%;
@@ -26,6 +36,22 @@ img.thumbnailitem {
 	height: 100%;
 }
 
+div.posttypeitemholder {
+	position: absolute;
+	float: left;
+	left: 0;
+	margin: 10px;
+	background-color: #ffffff;
+	padding: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.posttypeitem {
+	position: relative;
+	font-size: 18px;
+}
+
 div.contenditemholder {
 	position: relative;
 	width: 66%;
@@ -36,4 +62,34 @@ div.contenditemholder {
 	float: right;
 	right: 0px;
 }
+
+p.itemcontent {
+	font-size: 14px;
+}
+
+div.createitemholder {
+	position: relative;
+	float: right;
+	width: 100px;
+	height: 30px;
+}
+
+.createitem {
+	border-radius: 45px;
+	border-style: solid;
+	border-color: #D74343;
+	border-width: 2px;
+	background-color: #D74343;
+	box-shadow:0px 3px 0px rgba(0,0,0,0.1);
+}
+
+.createitem:hover {
+	background-color: #D25151;
+	border-color: #D25151;
+}
+
+.textcreateitem {
+	line-height: 30px;
+}
+
 
