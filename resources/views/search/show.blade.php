@@ -5,20 +5,20 @@
 </form>
 <hr>
 
-@if (empty($result["post"]) and empty($result["bt"])) 
+@if (count($result["post"]) == 0 and count($result["bt"]) == 0) 
 	<p>Không tìm thấy kết quả</p>
 @else
 
 @foreach ($result["bt"] as $bt)
-	<h3><a href="{{ route('bt.show', $bt->id) }}">Giống cây {{ $bt->nameNormal }}</a></h3>
+	<h3><a href="{{ route('bt.show', $bt->id) }}">[Giống cây] Mã {{ $bt->code }}</a></h3>
 	<ul>
-		<li>{{ $bt->code }}</li>
-		<li>{{ $bt->nameNormal }}</li>
+		<li>Tên thông thường: {{ $bt->nameNormal }}</li>
+		<li>Tên khoa học: {{ $bt->nameScience }}</li>
 	</ul>	
 @endforeach
 
 @foreach ($result["post"] as $post)
-	<h3><a href="{{ route('post.show', $post->id) }}"> {{ $post->title }}</a></h3>
+	<h3><a href="{{ route('post.show', $post->id) }}">[Bài viết] {{ $post->title }}</a></h3>
 	<p>{{ str_limit($post->content, 250) }}</p>
 @endforeach
 
