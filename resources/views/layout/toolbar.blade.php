@@ -11,12 +11,22 @@
 		<ul class="menu">
 			<li>
 				<p class="title darkgray">
-					news
+					Tin tức
 				</p>
 			</li>
 			<li>
 				<p class="title darkgray">
-					search
+					Giống cây
+				</p>
+			</li>
+			<li>
+				<p class="title darkgray">
+					Hỏi đáp
+				</p>
+			</li>
+			<li>
+				<p class="title darkgray">
+					Tìm kiếm
 				</p>
 			</li>
 		</ul>

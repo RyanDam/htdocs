@@ -7,9 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/post.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/postreview.css">
+	<link rel="stylesheet" type="text/css" href="css/mainpage.css">
 </head>
 <body>
-	<div class="wholescreen">
+	<!-- <div class="wholescreen"> -->
 		
 		@section('toolbar')
 			@include('layout.toolbar')
@@ -19,10 +21,10 @@
 
 		@show	
 
-	</div>
+	<!-- </div> -->
 
-	@section('footder')
+	<!-- @section('footder')
 		@include('layout.footer')
-	@show
+	@show -->
 </body>
 </html>

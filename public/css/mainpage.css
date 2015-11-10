@@ -1,0 +1,95 @@
+div.welcomescreen {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	background-image: url("../img/welcome.jpg");
+}
+
+.welcomescreen_mask {
+	position: absolute;
+	width: 100%;
+	height: 90vh;
+	background-color: rgba(51, 51, 102, 0.5);
+}
+
+div.homesearchholder {
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+
+h1.welcometext {
+	font-size: 32px;
+	color: #ffffff;
+	margin: 0;
+}
+
+.searchholder {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+}
+
+div.searchinput_holder {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.seachinputstyle {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	border-radius: 45px;
+	border-style: solid;
+	border-color: #ffffff;
+	border-width: 2px;
+	background-color: rgba(255,255,255,0.8);
+	color: #707070;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 16px;
+}
+
+div.submitsearch_holder {
+	position: relative;
+	width: 80px;
+	height: 30px;
+	margin: 20px auto;
+}
+
+.submitsearch {
+	position: relative;
+	/*width: 80px;*/
+	height: 40px;
+	border-radius: 20px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 1);
+	border-width: 0px;
+	background-color: rgba(102,178,255,0.8);
+	color: #ffffff;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: gotham_bold;
+}
+
+.submitsearch:hover {
+	background-color: rgba(102,178,255,1);
+}
+
+div.homecontent {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+div.homecontent_holder {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+}
