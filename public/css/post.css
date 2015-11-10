@@ -1,0 +1,81 @@
+div.postholder {
+	width: 70%;
+	height: 450px;
+	/*margin: 0px auto;*/
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+div.leftpos {
+	float: left;
+}
+
+div.rightpos {
+	float: right;
+}
+
+div.padrightcontent {
+	left: 20px;
+}
+
+div.padleftcontent {
+	right: 20px;
+}
+
+div.righttitle {
+	right: 0;
+	/*bottom: 0;*/
+}
+
+div.lefttitle {
+	left: 0;
+	/*bottom: 0;*/
+}
+
+div.leftsidepost {
+	width: 50%;
+	position: relative;
+	display: block;
+}
+
+div.contentholder {
+	width: 40%;
+	position: relative;
+	display: block;
+	padding: 20px;
+}
+
+div.titleholder {
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	/*display: block;*/
+	background-color: #ffffff;
+	/*margin: 20px;*/
+	margin-bottom: 20px;
+}
+
+img.postthumbnail {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+}
+
+div.postthumbnailmask {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	background-color: rgba(48, 202, 104, 0.0);
+	/*background-color: #30ca68;*/
+}
+
+h1.posttitle {
+	font-size: 22px;
+	/*padding-right: 20px;*/
+	/*padding-left: 20px;*/
+}
+
+p.postcontent {
+	line-height: 24px;
+	text-align: justify;
+}
