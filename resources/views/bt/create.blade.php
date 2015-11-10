@@ -20,6 +20,9 @@
 	<label for="nameScience">Tên khoa học</label> <br>
 	<input name="nameScience" type="text"> <br>
 
+	<label for="img">Link hình ảnh</label> <br>
+	<input name="img" type="text"> <br>
+
 	<label for="info">Thông tin</label> <br>
 	​<textarea name="info" rows="10" cols="70"></textarea><br>
 	<input type="submit" value="Submit">
