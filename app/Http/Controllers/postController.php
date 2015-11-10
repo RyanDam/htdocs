@@ -42,7 +42,8 @@ class postController extends Controller
         $post = Post::create([
             'title' => $request->input('title'),
             'content' => $request->input('content'),
-            'type' => $request->input('type')
+            'type' => $request->input('type'),
+            'img' => $request->input('img')
         ]);
         return redirect()->route('post.show', ['id' => $post->id]);
     }
@@ -84,6 +85,7 @@ class postController extends Controller
         $post->title = $request->input('title');
         $post->type = $request->input('type');
         $post->content = $request->input('content');
+        $post->img = $request->input('img');
         $post->save();
         return redirect()->route('post.show', ['id' => $post->id]);
     }

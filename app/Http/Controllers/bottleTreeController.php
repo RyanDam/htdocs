@@ -43,7 +43,8 @@ class bottleTreeController extends Controller
             'code' => $request->input('code'),
             'nameScience' => $request->input('nameScience'),
             'nameNormal' => $request->input('nameNormal'),
-            'info' => $request->input('info')
+            'info' => $request->input('info'),
+            'img' => $request->input('img')
         ]);
         return redirect()->route('bt.show', ['id' => $bt->id]);
     }
@@ -86,6 +87,7 @@ class bottleTreeController extends Controller
         $bt->nameNormal = $request->input('nameNormal');
         $bt->nameScience = $request->input('nameScience');
         $bt->info = $request->input('info');
+        $bt->img = $request->input('img');
         $bt->save();
         return redirect()->route('bt.show', ['id' => $bt->id]);
     }
