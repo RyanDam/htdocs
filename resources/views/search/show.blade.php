@@ -9,6 +9,7 @@
 	<p>Không tìm thấy kết quả</p>
 @else
 
+@foreach ($result["bt"] as $bt)
 	<h3><a href="{{ route('bt.show', $bt->id) }}">Giống cây {{ $bt->nameNormal }}</a></h3>
 	<ul>
 		<li>{{ $bt->code }}</li>
