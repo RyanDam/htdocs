@@ -21,6 +21,9 @@
 	<input type="radio" name="type" value="Kỹ thuật" {{ $post->type=="Kỹ thuật"?"checked":null }}>Kỹ thuật sản xuất<br>
 	<input type="radio" name="type" value="Mô hình sản xuất" {{ $post->type=="Mô hình sản xuất"?"checked":null }}>Mô hình sản xuất<br>
 
+	<label for="img">Link hình ảnh</label>
+	<input name="img" type="text" value="{{ $post->img }}"> <br>
+
 	<label for="content">Nội dung</label> <br>
 	​<textarea name="content" rows="10" cols="70">{{ $post->content }}</textarea><br>
 	<input type="submit" value="Submit">

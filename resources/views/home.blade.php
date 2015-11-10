@@ -12,7 +12,7 @@
 			<center><h1 class="welcometext fontgothambold">CHUYÊN TRANG KHUYẾN NÔNG</h1></center>
 			<form action="abc" method="POST" class="searchholder">
 				<div class="searchinput_holder">
-					<input type="text" name="searchinput" value="Nhập để tìm kiếm" class="seachinputstyle"></input>
+					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="seachinputstyle"></input>
 				</div>
 				<div class="submitsearch_holder">
 					<input type="submit" value="TÌM KIẾM" class="submitsearch"></form>
@@ -57,7 +57,7 @@
 						vị bổ của nó, thật không thể tin được. Như các bạn thấy đấy,
 						nó được trồng thành luống rất đẹp. Rau dền trước khi thu hoạch có màu xanh,
 						sau khi thu hoạch sẽ có màu rau dền rất đẹp.'
-						, "thumbnail" => "1.jpg", "isleft" => true ])
+						, "thumbnail" => "5.jpg", "isleft" => true ])
 		</div>
 	</div>
 

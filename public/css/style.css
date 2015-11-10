@@ -26,8 +26,8 @@
 	background-color: #ffffff;
 }
 
-.greenback {
-	background-color: #30ca68;
+.blueback {
+	background-color: #3080CA;
 }
 
 .fontgothambold {
@@ -36,4 +36,16 @@
 
 .fontcontent {
 	font-family: opensans;
+}
+
+.fontwelcome {
+	font-family: opensans_light;
+}
+
+.fontroboto {
+	font-family: roboto;
+}
+
+a.menu {
+	text-decoration: none;
 }
