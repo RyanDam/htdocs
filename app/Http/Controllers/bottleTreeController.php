@@ -17,7 +17,7 @@ class bottleTreeController extends Controller
      */
     public function index()
     {
-        $bts = BottleTree::all();
+        $bts = BottleTree::orderBy('created_at', 'desc')->get();
         return view('bt.index', compact('bts'));
     }
 
