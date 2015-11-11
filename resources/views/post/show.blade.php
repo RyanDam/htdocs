@@ -9,7 +9,7 @@
 
 	<h1>{{ $post->title }}</h1>
 	<label>Mục:</label> <span>{{ $post->type }}</span> <br>
-	<img src="img/{{ $post->img }}" width="600" height="400"> <br>
+	<img src="/img/{{ $post->img }}" width="600" height="400"> <br>
 	<p>
 	{!! nl2br($post->content, false) !!}
 	</p>
