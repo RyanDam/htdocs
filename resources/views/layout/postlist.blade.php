@@ -17,11 +17,11 @@
 	@endif
 
 	<?php
-		$abc = str_replace("<p>", " ", $content);
-		$xyz = str_replace("</p>", " ", $abc);
+		// $abc = str_replace("<p>", " ", $content);
+		// $xyz = str_replace("</p>", " ", $abc);
 	?>
 
-		<p class="postcontent fontcontent itemcontent darkgray">{!! str_limit($xyz, 250) !!}</p>
+		<p class="postcontent fontcontent itemcontent darkgray">{!! str_limit($content, 250) !!}</p>
 	</div>
 	<div class="posttypeitemholder">
 		<h3 class="posttypeitem darkgray fontgothambold">
