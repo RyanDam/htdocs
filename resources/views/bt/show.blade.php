@@ -9,6 +9,7 @@
 	<ul>
 		<li><b>Tên thông thường: </b>{{ $bt->nameNormal }}</li>
 		<li><b>Tên khoa học: </b>{{ $bt->nameScience }}</li>
+		<li><b>Vùng miền: </b>{{ $bt->area }}</li>
 	</ul>
 	<img src="{{ $bt->img }}" width="600" height="400"> <br>
 	<h3>Thông tin</h3>
