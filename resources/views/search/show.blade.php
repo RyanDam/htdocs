@@ -1,25 +1,38 @@
-<h1>Tim kiem</h1>
-<form action="{{ route('search') }}" method="GET">
-	<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray"></input>
-	<input type="submit" value="TÌM" class="toolsearchsubmit white"></form>
-</form>
-<hr>
+@extends('layout.layout')
 
-@if (count($result["post"]) == 0 and count($result["bt"]) == 0) 
-	<p>Không tìm thấy kết quả</p>
-@else
+@section('title', 'Kết quả')
 
-@foreach ($result["bt"] as $bt)
-	<h3><a href="{{ route('bt.show', $bt->id) }}">[Giống cây] Mã {{ $bt->code }}</a></h3>
-	<ul>
-		<li>Tên thông thường: {{ $bt->nameNormal }}</li>
-		<li>Tên khoa học: {{ $bt->nameScience }}</li>
-	</ul>	
-@endforeach
+@section('content')
 
-@foreach ($result["post"] as $post)
-	<h3><a href="{{ route('post.show', $post->id) }}">[Bài viết] {{ $post->title }}</a></h3>
-	<p>{{ str_limit($post->content, 250) }}</p>
-@endforeach
+	<div class="postlisthoder">
+		<div class="headitemholder" style="height: 30px;">
+			<div class="titlelistitemholder">
+				<div class="titlelistitem">
+					<center><h2 class="textlistitem textcreateitem menu white fontgothambold">Kết quả tìm kiếm</h2></center>
+				</div>
+			</div>
+			<div class="titlelistitemholder" style="width: auto;">
+				<div class="titlelistitem" style="width: auto;">
+					<center><h2 class="textlistitem textcreateitem menu blue fontgothambold lightgrayback" style="width: auto; padding-left:10px; padding-right:10px;">{{ $result['keyword'] }}</h2></center>
+				</div>
+			</div>
+		</div>
+		@if (count($result["post"]) == 0 and count($result["bt"]) == 0) 
+			<div class="headitemholder" style="height: 30px;">
+				<p>Không tìm thấy kết quả</p>
+			</div>
+		@else
 
-@endif
+		@foreach ($result["bt"] as $p)
+			@include('layout.postlist', ['title' => $p->nameNormal, 'type' => 'Giống cây', 'content' => $p->info, 'thumbnail' => $p->img, 'id' => $p->id, 'mode' => '1'])
+		@endforeach
+
+		@foreach ($result["post"] as $post)
+			@include('layout.postlist', ['title' => $post->title, 'type' => 'Bài Viết', 'content' => $post->content, 'thumbnail' => $post->img, 'id' => $post->id, 'mode' => '2'])
+		@endforeach
+
+		@endif
+
+	</div>
+
+@endsection

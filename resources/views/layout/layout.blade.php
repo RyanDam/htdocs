@@ -11,6 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="/css/mainpage.css">
 	<link rel="stylesheet" type="text/css" href="/css/postitem.css">
 	<link rel="stylesheet" type="text/css" href="/css/toolbarsearch.css">
+	<link rel="stylesheet" type="text/css" href="/css/editor.css">
+	@section('header')
+	
+	@show
 </head>
 <body>
 	<!-- <div class="wholescreen"> -->
