@@ -24,11 +24,7 @@
 							</div>
 							<div class="searchopholder">
 								<p class="dropdownname fontcontent darkgray">Vùng: </p>
-<<<<<<< HEAD
-								<select class="dropdownsearch darkgray fontcontent" name="area">
-=======
 								<select name="area" class="dropdownsearch darkgray fontcontent" form="searchForm">
->>>>>>> master
 									<option value="Trung du miền núi phía Bắc">Trung du miền núi phía Bắc</option>
 									<option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
 									<option value="Bắc Trung Bộ">Bắc Trung Bộ</option>
