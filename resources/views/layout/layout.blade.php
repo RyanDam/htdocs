@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="/css/toolbarsearch.css">
 	<link rel="stylesheet" type="text/css" href="/css/editor.css">
 	<link rel="stylesheet" type="text/css" href="/css/search.css">
+	<link rel="stylesheet" type="text/css" href="/css/viewbt.css">
+	<link rel="stylesheet" type="text/css" href="/css/viewpost.css">
 	@section('header')
 	
 	@show
