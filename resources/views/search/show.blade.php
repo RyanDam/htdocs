@@ -11,6 +11,11 @@
 					<center><h2 class="textlistitem textcreateitem menu white fontgothambold">Kết quả tìm kiếm</h2></center>
 				</div>
 			</div>
+			<div class="titlelistitemholder" style="width: auto;">
+				<div class="titlelistitem" style="width: auto;">
+					<center><h2 class="textlistitem textcreateitem menu blue fontgothambold lightgrayback" style="width: auto; padding-left:10px; padding-right:10px;">{{ $result['keyword'] }}</h2></center>
+				</div>
+			</div>
 		</div>
 		@if (count($result["post"]) == 0 and count($result["bt"]) == 0) 
 			<div class="headitemholder" style="height: 30px;">

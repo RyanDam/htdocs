@@ -25,7 +25,8 @@ class searchController extends Controller
                             ->orWhere('content', 'LIKE', "%".$query."%")->get();
         $result = array(
             "bt" => $bts, 
-            "post" => $posts
+            "post" => $posts,
+            "keyword" => $query
             );
         return view('search.show', compact('result'));
     }
