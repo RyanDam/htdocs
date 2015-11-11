@@ -16,7 +16,7 @@ class questionController extends Controller
      */
     public function index()
     {
-        //
+        return view('question.index');
     }
 
     /**

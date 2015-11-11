@@ -10,6 +10,19 @@ use App\Http\Controllers\Controller;
 class userController extends Controller
 {
     /**
+     * Display a login/register of user.
+     *
+     */
+    public function login() 
+    {
+        return ('user.login');
+    }
+    public function logout() 
+    {
+        return ('user.register');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -84,4 +97,5 @@ class userController extends Controller
     {
         //
     }
+
 }

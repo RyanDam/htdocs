@@ -78,3 +78,22 @@ Route::delete('/caytrong/{id}/xoa', [
 	'as' => 'bt.destroy',
 	'uses' => 'bottleTreeController@destroy'
 ]);
+// Thống kê
+Route::get('/thongke', [
+	'as' => 'satistic.index',
+	'uses' => 'statisticController@index'
+]);
+// tư vấn
+Route::get('/tuvan', [
+	'as' => 'question.index',
+	'uses' => 'questionController@index'
+]);
+// User
+Route::get('/nguoidung/login', [
+	'as' => 'user.login',
+	'uses' => 'userController@login'
+]);
+Route::get('/nguoidung/dangky', [
+	'as' => 'user.register',
+	'uses' => 'userController@register'
+]);

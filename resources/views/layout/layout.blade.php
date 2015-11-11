@@ -16,7 +16,6 @@
 	@section('header')
 	
 	@show
-
 </head>
 <body>
 	<!-- <div class="wholescreen"> -->
