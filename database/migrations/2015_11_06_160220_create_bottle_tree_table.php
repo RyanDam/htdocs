@@ -18,6 +18,7 @@ class CreateBottleTreeTable extends Migration
             $table->string('nameNormal');
             $table->string('nameScience');
             $table->text('info');
+            $table->string('area');
             $table->string('img');
             $table->timestamps();
         });
