@@ -3,14 +3,23 @@
 @section('title', 'Giống cây')
 
 @section('content')
-	<h1>Danh sách giống cây</h1>
-	<a href="{{ route('bt.create') }}">Tạo giống cây</a>
-	@foreach ($bts as $bt) 
-		<h2><a href="{{ route('bt.show', $bt->id) }}">Mã {{ $bt->code }}</a></h2>
-		<ul>
-			<li><b>Tên thông thường: </b>{{ $bt->nameNormal }}</li>
-			<li><b>Tên khoa học: </b>{{ $bt->nameScience }}</li>
-		</ul>
-	@endforeach
-	
+
+	<div class="postlisthoder">
+		<div class="headitemholder" style="height: 30px;">
+			<div class="createitemholder createitem">
+				<center><a href="{{ route('bt.create') }}" class="textcreateitem menu white fontgothambold">Tạo giống</a></center>
+			</div>
+			<div class="titlelistitemholder">
+				<div class="titlelistitem">
+					<center><h2 class="textlistitem textcreateitem menu white fontgothambold">Danh sách giống cây</h2></center>
+				</div>
+			</div>
+		</div>
+		@foreach ($bts as $p) 
+
+			@include('layout.postlist', ['title' => $p->nameNormal, 'type' => $p->nameScience, 'content' => $p->info, 'thumbnail' => $p->img, 'id' => $p->id, 'mode' => '1'])
+
+		@endforeach
+	</div>
+
 @endsection
