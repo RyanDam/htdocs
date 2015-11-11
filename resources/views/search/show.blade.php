@@ -8,7 +8,7 @@
 
 		<div class="headitemholder" style="height: 70px;background-color: #f5f5f5;box-shadow:0px 1px 5px rgba(0,0,0,0.1);">
 			<div class="toolbarsearchholder" style="width: 800px;margin: 0 auto;left: 40px;">
-				<form action="{{ route('search') }}" method="GET">
+				<form action="{{ route('search') }}" method="GET" id="searchForm">
 					<div>
 						<div class="searchengine">
 							<div class="toolsearchholder" style="width: 300px;">
@@ -16,18 +16,22 @@
 							</div>
 							<div class="searchopholder">
 								<p class="dropdownname fontcontent darkgray">Loại: </p>
-								<select class="dropdownsearch darkgray fontcontent">
+								<select name="category" class="dropdownsearch darkgray fontcontent" form="searchForm">
+									<option value="all">Tất cả</option>
 									<option value="bt">Giống cây</option>
 									<option value="post">Bài viết</option>
 								</select>
 							</div>
 							<div class="searchopholder">
 								<p class="dropdownname fontcontent darkgray">Vùng: </p>
-								<select class="dropdownsearch darkgray fontcontent">
-									<option value="bt">Đồi thông</option>
-									<option value="post">Mâm quả</option>
-									<option value="post">Khe suối</option>
-									<option value="post">Hang động</option>
+								<select name="area" class="dropdownsearch darkgray fontcontent" form="searchForm">
+									<option value="Trung du miền núi phía Bắc">Trung du miền núi phía Bắc</option>
+									<option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
+									<option value="Bắc Trung Bộ">Bắc Trung Bộ</option>
+									<option value="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</option>
+									<option value="Tây Nguyên">Tây Nguyên</option>
+									<option value="Đông Nam Bộ">Đông Nam Bộ</option>
+									<option value="Đồng Bằng sông Cửu Long">Đồng Bằng sông Cửu Long</option>
 								</select>
 							</div>
 							
