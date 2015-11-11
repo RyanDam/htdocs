@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/postitem.css">
 	<link rel="stylesheet" type="text/css" href="/css/toolbarsearch.css">
 	<link rel="stylesheet" type="text/css" href="/css/editor.css">
+	<link rel="stylesheet" type="text/css" href="/css/search.css">
 	@section('header')
 	
 	@show
