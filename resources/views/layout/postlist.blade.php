@@ -1,7 +1,7 @@
 <style type="text/css">
-	p {
+	/*p {
 		font-size: 14px;
-	}
+	}*/
 </style>
 
 <div class="postitemholder">
