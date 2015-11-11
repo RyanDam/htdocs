@@ -89,7 +89,24 @@
 							<input name="nameScience" type="text" value="" class="inputlong inputstyle"> <br>
 						@endif
 					</div>
+
+					<div class="blockinfo centerblock">
+						<br>
+						<label for="nameScience">Vùng:</label> <br>
+						<select name="area" class="dropdownsearch darkgray fontcontent" style="width: 300px;left: -10px;">
+							<option value="Trung du miền núi phía Bắc">Trung du miền núi phía Bắc</option>
+							<option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
+							<option value="Bắc Trung Bộ">Bắc Trung Bộ</option>
+							<option value="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</option>
+							<option value="Tây Nguyên">Tây Nguyên</option>
+							<option value="Đông Nam Bộ">Đông Nam Bộ</option>
+							<option value="Đồng Bằng sông Cửu Long">Đồng Bằng sông Cửu Long</option>
+						</select>
+					</div>
+
 				</div>
+
+				<br>
 
 				<label for="img">Link hình ảnh:</label> <br>
 				@if ($mode === 2)
@@ -97,17 +114,6 @@
 				@else
 					<input name="img" type="text" value="" class="inputlong inputstyle"> <br>
 				@endif
-				<label for="area">Vùng</label>
-				<select name="area" class="dropdownsearch darkgray fontcontent">
-					<option value="Trung du miền núi phía Bắc">Trung du miền núi phía Bắc</option>
-					<option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
-					<option value="Bắc Trung Bộ">Bắc Trung Bộ</option>
-					<option value="Duyên hải Nam Trung Bộ">Duyên hải Nam Trung Bộ</option>
-					<option value="Tây Nguyên">Tây Nguyên</option>
-					<option value="Đông Nam Bộ">Đông Nam Bộ</option>
-					<option value="Đồng Bằng sông Cửu Long">Đồng Bằng sông Cửu Long</option>
-				</select>
-				<br>
 
 				<label for="info">Thông tin</label> <br>
 				@if ($mode === 2)
