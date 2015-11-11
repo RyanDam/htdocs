@@ -16,9 +16,9 @@ Route::get('/',[
 	'uses' => 'homeController@index'
 ]);
 // Search
-Route::get('/timkiem/{info}', [
+Route::get('/timkiem', [
 	'as' => 'search',
-	'uses' => 'searchController@show'
+	'uses' => 'searchController@search'
 ]);
 // Post
 Route::get('/baiviet', [
