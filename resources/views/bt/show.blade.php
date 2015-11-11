@@ -4,7 +4,7 @@
 	<li><b>Tên thông thường: </b>{{ $bt->nameNormal }}</li>
 	<li><b>Tên khoa học: </b>{{ $bt->nameScience }}</li>
 </ul>
-<img src="{{ $bt->img }}" width="600" height="400"> <br>
+<img src="/img/{{ $bt->img }}" width="600" height="400"> <br>
 <h3>Thông tin</h3>
 <p>
 	{!! nl2br($bt->info) !!}
