@@ -1,6 +1,6 @@
 @extends('layout.layout')
 
-@section('title', 'Kết quả')
+@section('title', 'Cây - '.$bt->nameNormal)
 
 @section('content')
 	<div class="mainviewbtholder">
