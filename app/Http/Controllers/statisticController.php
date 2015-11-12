@@ -16,7 +16,7 @@ class statisticController extends Controller
      */
     public function index()
     {
-        //
+        return view('statistic.index');
     }
 
     /**

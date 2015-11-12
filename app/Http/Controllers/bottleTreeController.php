@@ -17,7 +17,7 @@ class bottleTreeController extends Controller
      */
     public function index()
     {
-        $bts = BottleTree::all();
+        $bts = BottleTree::orderBy('created_at', 'desc')->get();
         return view('bt.index', compact('bts'));
     }
 
@@ -44,7 +44,8 @@ class bottleTreeController extends Controller
             'nameScience' => $request->input('nameScience'),
             'nameNormal' => $request->input('nameNormal'),
             'info' => $request->input('info'),
-            'img' => $request->input('img')
+            'img' => $request->input('img'),
+            'area' => $request->input('area')
         ]);
         return redirect()->route('bt.show', ['id' => $bt->id]);
     }
@@ -88,6 +89,7 @@ class bottleTreeController extends Controller
         $bt->nameScience = $request->input('nameScience');
         $bt->info = $request->input('info');
         $bt->img = $request->input('img');
+        $bt->area = $request->input('area');
         $bt->save();
         return redirect()->route('bt.show', ['id' => $bt->id]);
     }

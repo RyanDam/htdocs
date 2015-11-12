@@ -42,7 +42,7 @@
 		<div class="toolbarsearchholder rightpos">
 			<form action="{{ route('search') }}" method="GET">
 				<div class="toolsearchholder">
-					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray"></input>
+					<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray" required></input>
 				</div>
 				<div class="toolsearchsubmitholder">
 					<input type="submit" value="TÌM" class="toolsearchsubmit white"></form>

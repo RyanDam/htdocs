@@ -28,7 +28,8 @@ class StoreBottleTreeRequest extends Request
             'nameNormal' => 'required',
             'nameScience' => 'required',
             'info' => 'required',
-            'img' => 'required'
+            'img' => 'required',
+            'area' => 'required'
         ];
     }
     /**

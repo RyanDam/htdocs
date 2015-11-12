@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Post;
 
 class homeController extends Controller
 {
@@ -16,7 +17,8 @@ class homeController extends Controller
      */
     public function index()
     {
-        return view('home');
+    	$posts = Post::orderBy('created_at', 'desc')->take(3)->get();
+        return view('home', compact('posts'));
     }
     
 }
