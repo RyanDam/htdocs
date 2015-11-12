@@ -52,9 +52,11 @@ class searchController extends Controller
     */
     private function searchBt($query, $area) {
          $bts = BottleTree::where('area','=',$area)
-                            ->where('nameNormal', 'LIKE', "%".$query."%")
-                            ->orWhere('nameScience', 'LIKE', "%".$query."%")
-                            ->orWhere('code', 'LIKE', "%".$query."%")
+                            ->where(function ($select) use ($query) {
+                                $select->where('nameNormal', 'LIKE', "%".$query."%")
+                                ->orWhere('nameScience', 'LIKE', "%".$query."%")
+                                ->orWhere('code', 'LIKE', "%".$query."%");
+                            })
                             ->get();
         $result = array(
             "bt" => $bts, 
