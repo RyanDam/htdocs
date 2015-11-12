@@ -12,7 +12,7 @@
 					<div>
 						<div class="searchengine">
 							<div class="toolsearchholder" style="width: 300px;">
-								<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray" required></input>
+								<input type="text" name="searchinput" placeholder="Nhập để tìm kiếm" class="toolsearch darkgray" required value="{{ $result['keyword'] }}"></input>
 							</div>
 							<div class="searchopholder">
 								<p class="dropdownname fontcontent darkgray">Loại: </p>
