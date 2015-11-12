@@ -12,6 +12,7 @@ class BottleTree extends Model
     	'nameNormal',
     	'nameScience',
     	'info',
+    	'area',
     	'img'
     ];
 }

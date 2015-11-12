@@ -1,0 +1,103 @@
+div.mainviewbtholder {
+	width: 100%;
+	/*background-color: #fbfbfb;*/
+	/*padding: 20px;*/
+}
+
+div.viewbtholder {
+	width: 70%;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.btviewheader {
+	position: relative;
+	height: 500px;
+}
+
+.btheadimgholder {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+}
+
+.btviewinfoholder {
+	position: relative;
+	width: 40%;
+	padding: 20px;
+	bottom: 0px;
+}
+
+.btviewtitle {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px;
+	font-size: 24px;
+	margin: 0px;
+}
+
+.btviewitem {
+	width: 100%;
+	position: relative;
+	background-color: #ffffff;
+	margin-top: 10px;
+	padding: 5px 10px;
+	font-size: 16px;
+}
+
+.btviewimg {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+
+}
+
+.btviewmask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.btviewcontent {
+	position: relative;
+}
+
+.btvieweditbt {
+	position: relative;
+	float: right;
+	height: 24px;
+	border-radius: 45px;
+	border-style: solid;
+	border-color: rgba(48,202,104,1.0);
+	border-width: 2px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14px;
+	background-color: rgba(48,202,104,1.0);
+	line-height: 24px;
+	margin-right: 20px;
+}
+
+.btviewremovebtholder {
+	position: relative;
+	float: right;
+}
+
+.btviewremovebt {
+	height: 24px;
+	height: 28px;
+	border-radius: 45px;
+	border-style: solid;
+	border-color: #D74343;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #D74343;
+	font-size: 14px;
+
+}
+
+.btviewcontrolholder {
+
+}
