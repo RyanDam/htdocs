@@ -3,10 +3,9 @@
 @section('title','Home')
 
 @section('content')
-
+<div style="position:relative;">
 	<div class="welcomescreen">
 		<div class="welcomescreen_mask">
-			
 		</div>
 		<div class="homesearchholder">
 			<center><h1 class="welcometext fontgothambold">CHUYÊN TRANG KHUYẾN NÔNG</h1></center>
@@ -22,6 +21,7 @@
 	</div>
 
 	<div class="homecontent" >
+		<center><p class="titletext">Bài viết mới nhất</p></center>
 		<div class="homecontent_holder">
 			@foreach ($posts as $post)
 			@include('layout.postreview', [
@@ -31,6 +31,8 @@
 						"isleft" => true ])
 			@endforeach
 		</div>
+		<br><br>
 	</div>
+</div>
 
 @endsection
