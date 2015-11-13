@@ -80,7 +80,7 @@ Route::delete('/caytrong/{id}/xoa', [
 ]);
 // Thống kê
 Route::get('/thongke', [
-	'as' => 'satistic.index',
+	'as' => 'statistic.index',
 	'uses' => 'statisticController@index'
 ]);
 // tư vấn

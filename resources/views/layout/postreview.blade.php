@@ -14,7 +14,7 @@
 					$abc = str_replace("<p class=\"", "<p  class=\"content_rv fontcontent ", $content);
 					$abc = str_replace("<p>", "<p  class=\"content_rv fontcontent\"> ", $abc)
 				?>
-				{!! str_limit($abc, 370) !!}
+				{!! str_limit($abc, 350) !!}
 			</p>
 		</div>
 	</div>

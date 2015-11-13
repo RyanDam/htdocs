@@ -15,11 +15,11 @@ class userController extends Controller
      */
     public function login() 
     {
-        return ('user.login');
+        return view('user.login');
     }
     public function logout() 
     {
-        return ('user.register');
+        return view('user.register');
     }
 
     /**

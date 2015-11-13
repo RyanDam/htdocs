@@ -26,8 +26,7 @@
 			</li>
 			<li>
 				<p class="title darkgray">
-					Thống kê
-					
+					<a href="{{ route('statistic.index') }}" class="menu darkgray">Thống kê</a>
 				</p>
 			</li>
 		</ul>
@@ -36,7 +35,7 @@
 	<div class="right">
 		<div class="logintext rightpos">
 			<p class="title">
-				<a href="{{ route('user.login') }}" class="menu green">Login</a>
+				<a href="{{ route('user.login') }}" class="menu green">Đăng nhập</a>
 			</p>
 		</div>
 		
