@@ -1,0 +1,14 @@
+.mainquesholder {
+	width: 100%;
+	/*background-color: #e0e0e0;*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.quesinfoholder {
+	position: relative;
+	width: 70%;
+	height: 200px;
+	margin: 0 auto;
+	/*background-color: #ffffff;*/
+}

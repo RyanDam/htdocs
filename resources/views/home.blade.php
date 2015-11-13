@@ -19,7 +19,6 @@
 			</form>
 		</div>
 	</div>
-
 	<div class="homecontent" >
 		<center><p class="titletext">Bài viết mới nhất</p></center>
 		<div class="homecontent_holder">
