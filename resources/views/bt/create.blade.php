@@ -1,4 +1,4 @@
-@extends('layout.editor')
+@extends('layout.bteditor')
 
 @section('title', 'Tạo cây trồng')
 
