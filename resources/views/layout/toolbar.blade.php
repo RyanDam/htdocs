@@ -21,12 +21,12 @@
 			</li>
 			<li>
 				<p class="title darkgray">
-					Hỏi đáp
+					<a href="{{ route('question.index') }}" class="menu darkgray">Hỏi đáp</a>
 				</p>
 			</li>
 			<li>
 				<p class="title darkgray">
-					Thống kê
+					<a href="{{ route('statistic.index') }}" class="menu darkgray">Thống kê</a>
 				</p>
 			</li>
 		</ul>
@@ -35,7 +35,7 @@
 	<div class="right">
 		<div class="logintext rightpos">
 			<p class="title">
-				Login
+				<a href="{{ route('user.login') }}" class="menu green">Đăng nhập</a>
 			</p>
 		</div>
 		
