@@ -24,6 +24,7 @@
 		<div class="homecontent_holder">
 			@foreach ($posts as $post)
 			@include('layout.postreview', [
+						'id' => $post->id,
 						'title' => $post->title,
 						'content' => $post->content,
 						'thumbnail' => $post->img, 
