@@ -2,6 +2,22 @@
 
 @section('title', 'Kết quả')
 
+@section('header')
+
+<script type="text/javascript">
+	function changeareastate(select) {
+		var x = select.value;
+		if (x == "post" || x == "all") {
+			document.getElementById("area_selector").style.visibility = "hidden";
+		}
+		else {
+			document.getElementById("area_selector").style.visibility = "visible";
+		}
+	}
+</script>
+
+@endsection
+
 @section('content')
 
 	<div class="postlisthoder">
@@ -16,14 +32,14 @@
 							</div>
 							<div class="searchopholder">
 								<p class="dropdownname fontcontent darkgray">Loại: </p>
-								<select name="category" class="dropdownsearch darkgray fontcontent" form="searchForm">
+								<select name="category" class="dropdownsearch darkgray fontcontent" form="searchForm" onchange="changeareastate(this)">
 									<option value="all">Tất cả</option>
 									<option value="bt">Giống cây</option>
 									<option value="post">Bài viết</option>
 								</select>
 							</div>
-							<div class="searchopholder">
-								<p class="dropdownname fontcontent darkgray">Vùng: </p>
+							<div class="searchopholder" id="area_selector">
+								<p id="abc" class="dropdownname fontcontent darkgray">Vùng: </p>
 								<select name="area" class="dropdownsearch darkgray fontcontent" form="searchForm">
 									<option value="Trung du miền núi phía Bắc">Trung du miền núi phía Bắc</option>
 									<option value="Đồng bằng sông Hồng">Đồng bằng sông Hồng</option>
@@ -34,7 +50,9 @@
 									<option value="Đồng Bằng sông Cửu Long">Đồng Bằng sông Cửu Long</option>
 								</select>
 							</div>
-							
+							<script type="text/javascript">
+								document.getElementById("area_selector").style.visibility = "hidden";
+							</script>
 						</div>
 						<div class="searchitemchooserholder">
 							<div class="toolsearchsubmitholder">

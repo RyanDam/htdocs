@@ -21,6 +21,9 @@ class userController extends Controller
     {
         return view('user.register');
     }
+    public function register() {
+        return view('user.register');
+    }
 
     /**
      * Display a listing of the resource.
