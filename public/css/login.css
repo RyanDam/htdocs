@@ -1,0 +1,49 @@
+.mainloginholder {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url("../img/loginback.jpg");
+}
+
+.mainloginholdermask {
+	width: 100%;
+	height: 86.2vh;
+	background-color: #eaeaea;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: absolute;
+	background-color: rgba(51, 51, 102, 0.3);
+}
+
+.logininfoholder {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+
+.logintextholder {
+	position: relative;
+	float: left;
+}
+
+.loginholder {
+	position: relative;
+	float: right;
+	width: 30%;
+	height: 300px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 1.0);
+	border-radius: 10px;
+	border-style: solid;
+	border-color: rgba(48,202,104,0.0);
+	border-width: 2px;
+}
+
+.loginformholder {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+
+}

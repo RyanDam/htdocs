@@ -98,7 +98,7 @@
 						<textarea name="content" rows="30"></textarea><br>
 					@endif
 
-					<center><input type="submit" value="Submit" class="submiteditorbutton"></center>
+					<center><input type="submit" value="Đăng lên" class="submiteditorbutton"></center>
 
 				</form>
 			</div>

@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="/css/search.css">
 	<link rel="stylesheet" type="text/css" href="/css/viewbt.css">
 	<link rel="stylesheet" type="text/css" href="/css/viewpost.css">
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+	<link rel="stylesheet" type="text/css" href="/css/question.css">
 	@section('header')
 	
 	@show
