@@ -5,7 +5,7 @@
 	<div class="postcontent_rv">
 		<div class="titleholder_rv">
 			<h1 class="title_rv fontgothambold darkgray">
-				<?php echo $title;?>
+				<a href="{{ route('post.show', $id) }}" class="fontgothambold darkgray menu"><?php echo $title;?></a>
 			</h1>
 		</div>
 		<div class="contentholder_rv">
