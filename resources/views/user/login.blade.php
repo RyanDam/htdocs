@@ -26,6 +26,8 @@
 					<input name="code darkgray" type="text" value="" class="inputlong inputstyle" style="width:200px;"><br><br>
 					<br>
 					<center><input type="submit" value="Đăng nhập" class="toolsearchsubmit white"></center>
+					<br>
+					<center><a href="{{ route('user.register') }}" class="menu green" style="font-size:12px;margin-top:20px;">Tạo tài khoản</a></center>
 				</div>
 			</div>
 		</div>
