@@ -5,7 +5,7 @@
 	<div class="postcontent_rv">
 		<div class="titleholder_rv">
 			<h1 class="title_rv fontgothambold darkgray">
-				<?php echo $title;?>
+				<a href="{{ route('post.show', $id) }}" class="fontgothambold darkgray menu"><?php echo $title;?></a>
 			</h1>
 		</div>
 		<div class="contentholder_rv">
@@ -14,7 +14,7 @@
 					$abc = str_replace("<p class=\"", "<p  class=\"content_rv fontcontent ", $content);
 					$abc = str_replace("<p>", "<p  class=\"content_rv fontcontent\"> ", $abc)
 				?>
-				{!! str_limit($abc, 370) !!}
+				{!! str_limit($abc, 300) !!}
 			</p>
 		</div>
 	</div>

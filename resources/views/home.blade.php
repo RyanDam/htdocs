@@ -19,12 +19,12 @@
 			</form>
 		</div>
 	</div>
-
 	<div class="homecontent" >
 		<center><p class="titletext">Bài viết mới nhất</p></center>
 		<div class="homecontent_holder">
 			@foreach ($posts as $post)
 			@include('layout.postreview', [
+						'id' => $post->id,
 						'title' => $post->title,
 						'content' => $post->content,
 						'thumbnail' => $post->img, 
