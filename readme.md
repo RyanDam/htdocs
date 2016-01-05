@@ -6,4 +6,4 @@ Make by group 4 member:
 3. Trịnh Hoài Chương
 4. Lê Minh Đức
 
-Project make website for agricultural consultant.
+Project make website for agricultural consultant. However, project is still uncompleted;
